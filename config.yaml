@@ -1,0 +1,13 @@
+MAA_config_path: "D:\\OpenProgram\\MAA-v5.8.1-win-x64\\cache\\copilot"
+upper_replace:
+  "临光:*": "黍:1:0"
+normal_replace:
+  "闪灵:*": "流明:3:1"
+  "纯烬艾雅法拉:*": "流明:3:1"
+  "澄闪:*": "逻各斯:1:0"
+  "能天使:*": "艾拉:3:1"
+  "星熊:*": "黍:1:0"
+extra_opers:
+  ["德克萨斯","黍","银灰"]
+powerful_opers:
+  ["维什戴尔:3:1"]
