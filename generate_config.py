@@ -1,6 +1,8 @@
+import os
+sss = """
 # 填写你的MAA的copilot cache路径
-MAA_config_path: "D:\\MAA-v5.8.1-win-x64\\cache\\copilot"
 # 注意：需要两个\\\\或/作为路径分隔符！
+MAA_config_path: "D:\\\\MAA-v5.8.1-win-x64\\\\cache\\\\copilot"
 # 填写你要替换的干员
 # - 规则：
   # 字典的key是要替换的干员，格式："干员名:干员技能编号",干员技能编号为*代表所有技能。
@@ -34,3 +36,6 @@ extra_opers:
   # 如果干员总数超过12，不会执行任何操作。
   # e.g.:
   ["德克萨斯","黍","银灰"]
+"""
+with open('./config.yaml', 'w', encoding='utf-8') as f:
+    f.write(sss)

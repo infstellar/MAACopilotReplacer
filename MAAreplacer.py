@@ -6,6 +6,11 @@ from watchdog.events import FileSystemEventHandler
 import yaml
 import datetime
 
+if not os.path.exists("./config.yaml"):
+    import generate_config
+    input("config已生成。请修改config后重新运行程序。")
+    sys.exit(0)
+
 with open('./config.yaml', 'r', encoding='utf-8') as f:
     result = yaml.load(f.read(), Loader=yaml.FullLoader)
 FILE_CHANGED_FLAG = False
